@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchComponent } from './search/search.component';
 
 const myRoute:Routes=[{
   path:"",
@@ -14,18 +15,24 @@ const myRoute:Routes=[{
 {
   path:"view",
   component:ViewFriendComponent
-}]
+},
+{
+  path:"search",
+  component:SearchComponent
+}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     AddFriendComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
