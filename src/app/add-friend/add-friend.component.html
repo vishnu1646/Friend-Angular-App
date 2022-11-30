@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-12">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name"[(ngModel)] = "name" type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-12">
+                    <label for="" class="form-label">Describe Your Friend</label>
+                    <input name ="DescribeYourFriend"[(ngModel)] = "DescribeYourFriend" type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-12">
+                    <label for="" class="form-label">Friend Nickname</label>
+                    <input name ="friendNickName"[(ngModel)] = "friendNickName" type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-12">
+                    <button (click) = "readValues()" class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

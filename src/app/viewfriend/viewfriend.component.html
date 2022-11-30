@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">FriendName</th>
+                            <th scope="col">FriendNickname</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Num</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor = "let i of friends">
+                            <th scope="row">{{i._id}}</th>
+                            <td>{{i.name}}</td>
+                            <td>{{i.friendName}}</td>
+                            <td>{{i.friendNickName}}</td>
+                            <td>{{i.DescribeYourFriend}}</td>
+                            <td>{{i.__v}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
